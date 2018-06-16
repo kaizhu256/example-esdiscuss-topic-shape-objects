@@ -21,18 +21,22 @@
                         "name": "body",
                         "required": true,
                         "schema": {
-                            "required": ["x","y","name"],
                             "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
                                 "x": {
                                     "type": "number"
                                 },
                                 "y": {
                                     "type": "number"
-                                },
-                                "name": {
-                                    "type": "string"
                                 }
-                            }
+                            },
+                            "required": [
+                                "x",
+                                "y",
+                                "name"
+                            ]
                         }
                     }
                 ],
@@ -48,8 +52,9 @@
         }
     },
     "swagger": "2.0",
-    "tags": [{
-        "name": "Point"
-    }
+    "tags": [
+        {
+            "name": "Point"
+        }
     ]
 }
