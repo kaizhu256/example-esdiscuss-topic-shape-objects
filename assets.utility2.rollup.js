@@ -28382,6 +28382,7 @@ window.swgg.uiEventListenerDict[".onEventUiReload"]({ swggInit: true });\n\
                     resource = swaggerJson.resourceDict[tag] = local.objectSetDefault(
                         swaggerJson.resourceDict[tag] || swaggerJson.tagDict[tag],
                         {
+                            description: 'no description',
                             name: tag
                         }
                     );
@@ -32666,6 +32667,7 @@ bb>```');\n\
     (function () {\n\
         // init assets\n\
         local.assetsDict['/assets.swgg.swagger.json'] =\n\
+            local.tryCatchReadFile('assets.swgg.swagger.json') ||\n\
             local.assetsDict['/assets.swgg.swagger.json'] ||\n\
             local.assetsDict['/assets.swgg.swagger.petstore.json'];\n\
         // coverage-hack - re-run test-server\n\
