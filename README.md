@@ -1,5 +1,5 @@
 # example-esdiscuss-topic-shape-objects
-the zero-dependency, swiss-army-knife utility for building, testing, and deploying webapps
+example-demo for https://esdiscuss.org/topic/shape-objects
 
 # live web demo
 - [https://kaizhu256.github.io/example-esdiscuss-topic-shape-objects/assets.swgg.html](https://kaizhu256.github.io/example-esdiscuss-topic-shape-objects/assets.swgg.html)
