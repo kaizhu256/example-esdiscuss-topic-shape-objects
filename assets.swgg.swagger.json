@@ -1,0 +1,55 @@
+{
+    "basePath": "/v2",
+    "info": {
+        "description": "example-demo for esdiscuss https://esdiscuss.org/topic/shape-objects",
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "title": "Swagger Petstore",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/createPoint": {
+            "post": {
+                "description": "create a point",
+                "operationId": "addPet",
+                "parameters": [
+                    {
+                        "description": "Pet object that needs to be added to the store",
+                        "in": "body",
+                        "name": "body",
+                        "required": true,
+                        "schema": {
+                            "required": ["x","y","name"],
+                            "properties": {
+                                "x": {
+                                    "type": "number"
+                                },
+                                "y": {
+                                    "type": "number"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "default response"
+                    }
+                },
+                "tags": [
+                    "point"
+                ]
+            }
+        }
+    },
+    "swagger": "2.0",
+    "tags": [{
+        "name": "Point"
+    }
+    ]
+}
